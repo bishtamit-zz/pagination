@@ -4,7 +4,9 @@
     <div class="blog-list">
         {% for blog_post in blog_posts %}
             <div class="blog-item">
-                <h2>{{ blog_post.title|title }}</h2><span class="small">{{ blog_post.added | timesince }} ago</span>
+                <a href="{{ blog_post.get_absolute_url }}"><h2>{{ blog_post.title|title }}</h2></a><span
+                    class="small"
+            >{{ blog_post.added | timesince }} ago</span>
                 <p>{{ blog_post.get_truncated }}</p>
             </div>
         {% endfor %}

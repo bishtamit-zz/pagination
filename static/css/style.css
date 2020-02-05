@@ -57,15 +57,33 @@ main {
     margin-bottom: 2vh;
 }
 
-.blog-item {
+.blog-detail-item h2 {
+    color: rgba(153, 44, 255, 0.75);
+}
+
+.blog-item, .blog-detail-item {
     margin: 10px;
     margin-bottom: 3em;
 }
 
+.blog-item a {
+    text-decoration: none;
+    color: rgba(255, 85, 115, 0.79);
+}
+
 .blog-item h2 {
-    display: inline;
+    /*display: inline-block;*/
+    position: relative;
+    left: 0;
+    transition: all 300ms;
 
 }
+
+.blog-item h2:hover {
+    left: .5em;
+    right: .5em;
+}
+
 
 .blog-item p {
     margin-top: 1vh;
